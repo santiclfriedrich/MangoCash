@@ -2,7 +2,7 @@ import './style.css'
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <h1>Mango Cash</h1>
+    <h1>MangoCash</h1>
   </div>
 `
 
