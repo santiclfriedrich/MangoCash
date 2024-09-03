@@ -1,0 +1,59 @@
+@import url('/style.css');
+
+body{
+    background-color: var( --gris-fonts);
+}
+
+.navbar {
+    height: 90px;
+    width: 100vw;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    background-color: var(--blanco);
+}
+
+.navbar-center {
+    width: 50%;
+    height: 100%;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar-right {
+    width: 25%;
+    height: 100%;
+    padding: 0px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--gris-fonts);
+    font-weight: 500;
+}
+
+.navbar-button{
+
+}
+
+.--orange {
+    color: var(--blanco);
+}
+
+.--white {
+    color: var(--naranja-claro);
+}
