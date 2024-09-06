@@ -132,7 +132,12 @@ body{
     cursor: pointer;
 }
 
-.left-button:hover{
+.left-button a{
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+.left-button a:hover{
     color: var(--gris-fonts)
 }
 
@@ -149,8 +154,6 @@ body{
 .right-button:hover{
     color: var(--gris-fonts)
 }
-
-
 
 .column-right {
     flex: 1.5; 
