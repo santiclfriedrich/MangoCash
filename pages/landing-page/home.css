@@ -1,7 +1,7 @@
 @import url('/style.css');
 
 body{
-    background-color: var( --gris-fonts);
+    background-color: #F5F5F5;
 }
 
 .navbar {
@@ -135,7 +135,7 @@ body{
 
 .right-button{
     padding: 20px 30px;
-    background-color: var(--gris-fonts);
+    background-color: #F5F5F5;
     border: none;
     border-radius: 6px;
     color: var(--naranja-claro);
@@ -143,7 +143,7 @@ body{
 }
 
 .right-button:hover{
-    color: var(--blanco)
+    color: var(--gris-fonts)
 }
 
 
