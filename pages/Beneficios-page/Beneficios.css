@@ -1,0 +1,235 @@
+@import url('/style.css');
+
+body{
+    background-color: #F7F7F7;
+}
+
+.Beneficios{
+    font-size: 20px;
+    margin-left: 12px;
+    margin-bottom: -20px;
+}
+
+.Titulo{
+    font-size: 22px;
+    margin-left: 10px;
+    font-family: "Epilogue";
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 10px;
+    width: 700px;
+    height: 40px;
+    margin-top: -20px;
+
+}
+
+.Boton{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    padding-top: 8px;
+    width: 500px;
+    background-color: #F7F7F7;
+    border: 3px solid #B6B5B5;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.Iconos{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.Barra-de-busqueda input{
+    background-color: #FF862F;
+    width: 680px;
+    height: 45px;
+    border-radius: 40px;
+    border-color: #FF862F;
+    border-top: #FF862F;
+    border-left: #FF862F;
+    outline: none;
+    padding-left: 30px;
+    margin-top: -100px;
+    margin-left: 10px;
+}
+
+input::placeholder {
+    color: #323030; 
+    font-size: 15px;
+  }
+
+.Carousel-Categorias {
+    display: flex;
+    align-items: center;
+}
+
+#titulo-categoria{
+    font-size: 24px;
+    margin-right: 20px;
+    padding: 10px;
+    padding-top: 40px;
+    position: sticky;
+    left: 0;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.box-categorias{
+    display: flex;
+    gap: 20px; 
+    overflow-x: auto;
+    justify-content: center;
+    padding: 20px;
+    background-color: none;
+    width: 1100px;
+    height: 100px;
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+  
+.categoria:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.container-promociones {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    scrollbar-width: none;
+  }
+  
+.carousel {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0;
+}
+
+.link-card {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-promo {
+    flex: 0 0 auto;
+    width: 200px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    scroll-snap-align: start;
+    justify-content: center;
+    min-height: 200px; /* Ajusta este valor según sea necesario */
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+
+.card-promo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+.card-promo * {
+    margin-bottom: 10px; /* Ajusta según sea necesario */
+}
+  
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    padding: 10px;
+    z-index: 10;
+}
+
+.nav-button.prev {
+    left: 0;
+}
+
+.nav-button.next {
+    right: 0;
+}
+
+.metodos-de-pago{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 60px;
+    padding-left: 55px;
+    gap: 5px;
+    border: 2px solid none;
+}
+
+.logo-pagos{
+    width: 30px; 
+    height: 30px;     
+    margin: 0;     
+    object-fit: contain;
+}
+
+.card-container p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+  color: #323030; /* Cambia este valor al color deseado */
+  text-decoration: none; /* Elimina la línea debajo del enlace */
+}
+
