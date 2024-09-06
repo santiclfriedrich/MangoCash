@@ -1,19 +1,157 @@
 @import url('/style.css');
 
 body{
-    background-color: #F7F7F7;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background-color: var(--verde);
+    padding: 6px 14px;
+}
+
+.sidebar .logo_content .logo{
+    color: #fff;
+    display: flex;
+    height: 4em;
+    width: 100%;
+    align-items: center;
+}
+
+.logo_content .logo i{
+    font-size: 28px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    left: 90%;
+    top: 13px;
+    font-size: 20px;
+    height: 20px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+}
+
+.sidebar ul li{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin: 0 5px;
+    list-style: none;
+    line-height: 50px;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s ease;
+    border-radius: 6px;
+}
+
+.sidebar ul li a:hover{
+    color: #11101d;
+    background: var(--naranja-claro);
+}
+
+.sidebar ul li a i{
+    height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.sidebar .profile_content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .profile_content .profile{
+    position: relative;
+    padding: 10px 6px;
+    height: 60px;
+}
+
+.profile_content .profile .profile_details{
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile_details img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.profile .profile_details .name_content{
+    margin-left: 10px;
+}
+
+.profile .profile_details .name{
+    font-size: var(--f_size_p);
+    font-weight: var(--f_weight_subtitulos);
+}
+
+.profile #log_out{
+    position: absolute;
+    left: 88%;
+    bottom: 4px;
+    transform: translateX(-50%);
+    line-height: 50px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .Beneficios{
+    position: absolute;
+    height: auto;
+    width: calc(100% - 260px);
+    left: 260px;
     font-size: 20px;
-    margin-left: 12px;
-    margin-bottom: -20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Beneficios .beneficios-subtitle{
+    font-weight: 300;
+    margin-left: 15px;
+    font-size: 20px;
 }
 
 .Titulo{
     font-size: 22px;
-    margin-left: 10px;
+    margin-left: 15px;
     font-family: "Epilogue";
+    margin-top: 20px;
 }
 
 .botones{
@@ -22,11 +160,9 @@ body{
     gap: 40px;
     justify-content: center;
     padding: 20px;
-    padding-left: 10px;
     width: 700px;
     height: 40px;
-    margin-top: -20px;
-
+    margin-top: 5px;
 }
 
 .Boton{
@@ -40,15 +176,18 @@ body{
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .Iconos{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-right: 10px;
 }
 
+.Barra-de-busqueda{
+    margin-top: 25px;
+}
 
 .Barra-de-busqueda input{
     background-color: #FF862F;
@@ -78,11 +217,7 @@ input::placeholder {
     font-size: 24px;
     margin-right: 20px;
     padding: 10px;
-    padding-top: 40px;
-    position: sticky;
-    left: 0;
-    background-color: #f8f8f8;
-    z-index: 1;
+    margin-top: 10px;
 }
 
 .box-categorias{
@@ -94,6 +229,7 @@ input::placeholder {
     background-color: none;
     width: 1100px;
     height: 100px;
+    margin-top: -15px;
 }
 
 .categoria {
@@ -103,12 +239,14 @@ input::placeholder {
     align-items: center;
     text-align: center;
     padding: 15px;
-    width: 150px;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 10px;
     text-decoration: none;
     color: #333;
     transition: all 0.3s ease;
+    font-size: 12px;
+    gap: 5px;
 }
   
 .categoria:hover {
@@ -129,6 +267,10 @@ input::placeholder {
     position: relative;
     scrollbar-width: none;
   }
+
+  .container-promociones .subtitle-promociones{
+    margin-left: 15px;
+  }
   
 .carousel {
     display: flex;
@@ -138,6 +280,7 @@ input::placeholder {
     white-space: nowrap;
     scroll-behavior: smooth;
     padding: 10px 0;
+    margin-left: 15px;
 }
 
 .card-container {
