@@ -9,13 +9,11 @@ body{
     width: 100vw;
     padding: 0px 20px;
     margin-top: 10px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-
     background-color: var(--blanco);
 }
 
@@ -24,12 +22,10 @@ body{
     height: 100%;
     padding: 0px 20px;
     gap: 10px;
-
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
     align-items: center;
-
     position: relative;
 }
 
@@ -51,12 +47,10 @@ body{
     height: 100%;
     padding: 0px 20px;
     gap: 10px;
-
     display: flex;
     flex-wrap: nowrap;
     justify-content: end;
     align-items: center;
-
     position: relative;
 }
 
@@ -198,7 +192,6 @@ body{
 .container-image img{
     position: relative;
     left: 70px;
-
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -222,6 +215,7 @@ body{
 .why-title p{
     text-align: center;
     color: var(--naranja-claro);
+    font-size: 1.5rem;
     font-weight: var(--f_weight_parrafos);
     margin-bottom: 20px;
 }
@@ -235,13 +229,67 @@ body{
 
 .why-cards{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .why-cards .card{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
 }
 
 .why-cards .card img{
-    width: 20%;
+    background-color: #ededed;
+    width: 100%;
+    border-radius: 6px;
+    padding: 0px 50px;
+}
+
+.why-cards .card h3{
+    font-size: var(--f_size_h2);
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 10px;
+    line-height: 1.5;
+}
+
+.why-cards .card p{
+    font-size: var(--f_size_p);
+    font-weight: 300;
+    color: #607082;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+/*-----------WHY-GESTION----------*/
+
+.why-gestion{
+    height: 80vh;
+}
+
+.why-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.why-left{
+    flex: 1;
+    align-items: center;
+}
+
+.why-right{
+    flex: 1;
+}
+
+.why-right img{
+    width: 100%;
 }
