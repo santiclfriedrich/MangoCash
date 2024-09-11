@@ -8,6 +8,7 @@ body{
     height: 90px;
     width: 100vw;
     padding: 0px 20px;
+    margin-top: 10px;
 
     display: flex;
     flex-direction: row;
@@ -18,13 +19,29 @@ body{
     background-color: var(--blanco);
 }
 
+.navbar-left {
+    width: 25%;
+    height: 100%;
+    padding: 0px 20px;
+    gap: 10px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+
+    position: relative;
+}
+
 .navbar-center {
     width: 50%;
     height: 100%;
     padding: 0px 20px;
+    gap: 50px;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
 }
@@ -33,10 +50,34 @@ body{
     width: 25%;
     height: 100%;
     padding: 0px 20px;
-    gap: 20px;
+    gap: 10px;
+
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: end;
     align-items: center;
+
+    position: relative;
+}
+
+.navbar-logo {
+    position: relative;
+    top:-10px;
+    width: 75px;
+    height: auto;
+}
+
+.navbar-text {
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+
+.navbar-text b {
+    font-weight: 800;
+    color: var(--naranja-claro);
 }
 
 .navbar-link {
@@ -45,29 +86,21 @@ body{
     font-weight: 500;
 }
 
-.--orange {
-    color: var(--blanco);
-}
-
-.--white {
-    color: var(--naranja-claro);
-}
-
-
-
-.navbar-button.signup{
+.navbar-button-signup{
     border: none;
     padding: 15px 30px;
     border-radius: 6px;
     cursor: pointer;
+    color: var(--naranja-claro);
 }
 
-.navbar-button.signin{
+.navbar-button-signin{
     border: none;
     padding: 15px 30px;
     border-radius: 6px;
     background-color: var(--naranja-claro);
     cursor: pointer;
+    color: var(--blanco);
 }
 
 .navbar-button.signup:hover{
@@ -82,7 +115,8 @@ body{
 /* -----------MAIN-----------*/
 
 .container{
-    height: 100vh;
+    height: calc(100vh - 100px);
+    overflow: hidden;
 }
 
 .row {
@@ -95,7 +129,7 @@ body{
 .column-left {
     flex: 1; 
     padding: 20px;
-    margin-left: 30px;
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -162,6 +196,11 @@ body{
 }
 
 .container-image img{
+    position: relative;
+    left: 70px;
+
     width: 100%;
     height: auto;
+
+    border-radius: 20px;
 }
