@@ -201,6 +201,47 @@ body{
 
     width: 100%;
     height: auto;
-
     border-radius: 20px;
+}
+
+/*-----------WHY---------*/
+
+.container-why{
+    height: 100vh;
+}
+
+.why-title{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-size: var(--f_size_h2);
+}
+
+.why-title p{
+    text-align: center;
+    color: var(--naranja-claro);
+    font-weight: var(--f_weight_parrafos);
+    margin-bottom: 20px;
+}
+
+.why-title h2{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: var(--f_weight_bold);
+    line-height: 1.5;
+}
+
+.why-cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.why-cards .card{
+    width: 100%;
+}
+
+.why-cards .card img{
+    width: 20%;
 }
