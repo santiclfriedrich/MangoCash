@@ -9,7 +9,6 @@ body{
     width: 100vw;
     padding: 0px 20px;
     padding-top: 10px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,6 +103,11 @@ body{
 .--signin{
     color: var(--blanco);
     background-color: var(--naranja-claro);
+}
+
+.--signin a{
+    text-decoration: none;
+    color: var(--blanco);
 }
 
 .--signin:hover{
@@ -361,8 +365,10 @@ body{
 }
 
 .footer-logo h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: black;
+    position: relative;
+    right: 20px;
 }
 
 .footer-logo h1 span{
