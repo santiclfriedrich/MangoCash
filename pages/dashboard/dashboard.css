@@ -1,0 +1,36 @@
+@import url('/style.css');
+
+main {
+    width: 100vw;
+    height: calc(100vh - 32.8px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.side-bar {
+    width: 20%;
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.chart-container {
+    width: calc(80%);
+    padding: 0px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 13px;
+    }
+    
+    .chart1 { grid-area: 1 / 1 / 5 / 5; }
+    .chart2 { grid-area: 1 / 5 / 5 / 9; }
+    .chart3 { grid-area: 1 / 9 / 5 / 13; }
+    .chart4 { grid-area: 5 / 1 / 13 / 5; }
+    .chart5 { grid-area: 5 / 5 / 9 / 13; }
+    .chart6 { grid-area: 9 / 5 / 13 / 13; }
