@@ -57,6 +57,7 @@ body{
 
 .navbar-logo {
     width: 70%;
+    margin: 0px 0px 10px 0px;
     height: auto;
 }
 
@@ -116,7 +117,7 @@ body{
 
 /* -----------MAIN-----------*/
 
-.main{
+.container-main{
     height: calc(100vh - 90px);
     background-color: var(--gris-background);
 }
@@ -303,3 +304,144 @@ body{
 .why-right img{
     width: 100%;
 }
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--blanco);
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    height: 60vh;
+    min-width: 400px;
+    text-align: center;
+}
+
+.registroVH {
+    height: 90vh;
+}
+
+.titulo-modal {
+    margin: 0px 0px 20px 0px;
+    font-size: var(--f_size_h2);
+    font-weight: var(--f_weight_titulos);
+    color: var(--negro);
+}
+
+input {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--gris-buttons);
+    width: 100%;
+}
+
+.closeModalLogin, .closeModalRegistro {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -65px;
+    right: -5px;
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--negro);
+}
+
+.closeModalRegistro {
+    top: -90px;
+}
+
+.--login, .--register {
+    margin: 20px 0px;
+}
+
+.forgetPassword {
+    margin: 10px 0px;
+}
+
+.forgetPassword a {
+    color: var(--gris-fonts);
+}
+
+.forgetPassword a:hover {
+    color: var(--negro)
+}
+
+.logo-container {
+    width: 100%;
+}
+.logo-modal {
+    margin-top: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.modal-content {
+	-webkit-animation: modal-content 0.5s both;
+	        animation: modal-content 0.5s both;
+}
+
+@-webkit-keyframes modal-content {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9);
+        -webkit-animation-timing-function: ease-out;
+                animation-timing-function: ease-out;
+        opacity: 1;
+    }
+  }
+@keyframes modal-content {
+0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+}
+50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+}
+}
+  

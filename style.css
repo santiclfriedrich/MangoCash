@@ -8,6 +8,10 @@
     font-family: "Epilogue", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 :root {
     --f_size_h1: 30px;
     --f_size_h2: 20px;

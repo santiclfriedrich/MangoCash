@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./home.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
     <title>MangoCash</title>
 
     <link rel="shorcut icon" href="./src/assets/Logo_MangoCash.png"/>
@@ -29,7 +31,7 @@
       </div>
     </nav>
 
-    <section class="container main">
+    <section class="container-main">
       <div class="row">
 
         <div class="column-left">
@@ -121,6 +123,40 @@
         </div>
       </div>
 
+    </section>
+
+    <section id="loginModal" class="modal"> <!-- Modal de Login -->
+        <div class="modal-content">
+          <div class="logo-container">
+            <img class="logo-modal" src="./src/assets/Logo_MangoCash.png" alt="">
+          </div>
+          <span class="closeModalLogin"><i class='bx bx-x-circle'></i></span>
+          <h2 class="titulo-modal">Iniciar Sesión</h2>
+          <form>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button class="button --signin --login" type="submit">Iniciar Sesión</button>
+            <p class="forgetPassword"><a href="#">¿Olvidaste tu contraseña?</a></p>
+          </form>
+        </div>
+    </section>
+
+    <section id="registroModal" class="modal"> <!-- Modal de Registro -->
+        <div class="modal-content registroVH">
+          <div class="logo-container">
+            <img class="logo-modal" src="./src/assets/Logo_MangoCash.png" alt="">
+          </div>
+          <span class="closeModalRegistro"><i class='bx bx-x-circle'></i></span>
+          <h2 class="titulo-modal"></h2class>Registro</h2>
+          <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido" required>
+            <input type="email" placeholder="Correo Electrónico" required>
+            <input type="number" placeholder="DNI" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button class="button --signin --register" type="submit">Registrarse</button>
+          </form>
+        </div>
     </section>
 
     <script type="module" src="./main.js"></script>
